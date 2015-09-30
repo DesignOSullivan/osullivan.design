@@ -16,7 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="favicon.png">
 
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-toggle.min.js"></script>
@@ -37,25 +37,36 @@
                 paddingTop: '8%',
                 navigation: true,
                 onLeave: function (index, nextIndex, direction) {
-
-
                     if (index == 2 && direction == 'up') {
                         $('body').css('background-image', 'url(bg-image.png)');
                     }
-
                     if (index == 2 && direction == 'down') {
                         $('body').css('background-image', 'url(images/bg-image2.png)');
                     }
-
-
+                    if (index == 1 && direction == 'down') {
+                        $('body').css('background-image', 'url(images/bg-image2.png)');
+                    }
+                    if (index == 3 && direction == 'up') {
+                        $('body').css('background-image', 'url(images/bg-image.png)');
+                    }
                 },
 
-
-
             });
-
         });
     </script>
+
+
+    <!--
+    <script>
+        $(document).ready(function () {
+        $("#contactButton").click( function()
+                                  {
+            $('body').css('background-image', 'url(bg-image2.png)');
+        }
+                                 );
+        });
+    </script>
+-->
 
 
 </head>
@@ -88,17 +99,17 @@
                     </div>
                 </div>
                 <div class="clear bottom30"></div>
-                    <div class="row">
-                        <div class="col-md-5">
-                            
-                            <span>
+                <div class="row">
+                    <div class="col-md-5">
+
+                        <span>
                         <a type="button" class="btn btn-default btn-md" href="#secondPage">Check Out My Work</a>
                         &nbsp; OR  &nbsp;
-                        <a type="button" class="btn btn-default btn-md" href="#thirdPage">Hit Me Up</a>
+                        <a type="button" id="contactButton" class="btn btn-default btn-md" href="#thirdPage">Hit Me Up</a>
                         </span>
-                        </div>
                     </div>
-                
+                </div>
+
             </div>
         </div>
 
@@ -125,14 +136,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-<!--                        <a href="mailto:daniel.osullivan@archetypesc.com"><i>Daniel.Osullivan@archetypesc.com</i></a>-->
+                        <!--                        <a href="mailto:daniel.osullivan@archetypesc.com"><i>Daniel.Osullivan@archetypesc.com</i></a>-->
                     </div>
                 </div>
             </div>
         </div>
 
 
-        
+
         <div class="section " id="contact">
             <div class="container">
                 <div class="row">
@@ -154,11 +165,11 @@
                 </div>
             </div>
         </div>
-        
-        
-        
 
-<!--
+
+
+
+        <!--
         <div class="section" id="section1">
             <div class="slide">
                 <div class="intro">
