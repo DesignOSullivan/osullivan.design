@@ -2,7 +2,7 @@
 
 html{height:100%;}
 
-body{overflow: scroll; height:100%; background: no-repeat center center fixed; background-image: url(../images/bg-image.png);
+body{overflow: scroll; height:100%; background: no-repeat center center fixed; background-image: url(bg-image.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
