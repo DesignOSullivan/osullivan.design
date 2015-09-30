@@ -33,17 +33,17 @@
                 anchors: ['firstPage', 'secondPage', 'thirdPage', '4thpage', 'lastPage'],
                 menu: '#menu',
                 scrollingSpeed: 1000,
-                sectionsColor: ['', '', '#fff'],
+                sectionsColor: ['', '#fff', ''],
                 paddingTop: '8%',
                 navigation: true,
                 onLeave: function (index, nextIndex, direction) {
 
 
-                    if (index == 3 && direction == 'up') {
+                    if (index == 2 && direction == 'up') {
                         $('body').css('background-image', 'url(bg-image.png)');
                     }
 
-                    if (index == 3 && direction == 'down') {
+                    if (index == 2 && direction == 'down') {
                         $('body').css('background-image', 'url(images/bg-image2.png)');
                     }
 
@@ -66,14 +66,13 @@
         <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Hello</a></li>
         <li data-menuanchor="secondPage"><a href="#secondPage">Get in Touch</a></li>
         <li data-menuanchor="thirdPage"><a href="#thirdPage">My Work</a></li>
-        <li data-menuanchor="fourthPage"><a href="#fourthPage">Something Else</a></li>
     </ul>
 
 
     <div id="fullpage">
 
 
-        <div class="section " id="firstPage">
+        <div class="section " id="hello">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 col-xs-5 nameTitle textCenter">
@@ -93,9 +92,9 @@
                         <div class="col-md-5">
                             
                             <span>
-                        <a type="button" class="btn btn-default btn-md" href="#secondPage">Hit Me Up</a>
-                          or  
-                        <a type="button" class="btn btn-default btn-md" href="#thirdPage">Check Out My Work</a>
+                        <a type="button" class="btn btn-default btn-md" href="#secondPage">Check Out My Work</a>
+                        &nbsp; OR  &nbsp;
+                        <a type="button" class="btn btn-default btn-md" href="#thirdPage">Hit Me Up</a>
                         </span>
                         </div>
                     </div>
@@ -105,27 +104,7 @@
 
 
 
-        <div class="section " id="section00">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-xs-5 nameTitle textCenter">
-                        <h1>Social Life?<br>Feel Free to Hit Me Up</h1>
-                    </div>
-                </div>
-                <div class="clear bottom30"></div>
-                <div class="row">
-                    <div class="col-md-2 col-xs-2">
-                        <a href="https://www.linkedin.com/in/danielosullivanmb"><i class="fa fa-linkedin"></i></a>
-                    </div>
-                    <div class="col-md-2 col-xs-2">
-                        <a href="https://twitter.com/designosullivan"><i class="fa fa-twitter"></i></a>
-                    </div>
-                    <div class="col-md-2 col-xs-2">
-                        <a href="mailto:daniel.osullivan@archetypesc.com"><i class="fa fa-envelope"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
 
 
@@ -146,14 +125,40 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <a href="mailto:daniel.osullivan@archetypesc.com"><i>Daniel.Osullivan@archetypesc.com</i></a>
+<!--                        <a href="mailto:daniel.osullivan@archetypesc.com"><i>Daniel.Osullivan@archetypesc.com</i></a>-->
                     </div>
                 </div>
             </div>
         </div>
 
 
+        
+        <div class="section " id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-xs-5 nameTitle textCenter">
+                        <h1>Social Life?<br>Feel Free to Hit Me Up</h1>
+                    </div>
+                </div>
+                <div class="clear bottom30"></div>
+                <div class="row">
+                    <div class="col-md-2 col-xs-2">
+                        <a href="https://www.linkedin.com/in/danielosullivanmb"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <a href="https://twitter.com/designosullivan"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div class="col-md-2 col-xs-2">
+                        <a href="mailto:daniel.osullivan@archetypesc.com"><i class="fa fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
 
+<!--
         <div class="section" id="section1">
             <div class="slide">
                 <div class="intro">
@@ -171,6 +176,7 @@
                 </div>
             </div>
         </div>
+-->
 
 
     </div>
