@@ -2,7 +2,7 @@
 
 html{height:100%;}
 
-body{overflow: scroll; height:100%; background: url(../images/bg-image.png) no-repeat center center fixed;
+body{overflow: scroll; height:100%; background: no-repeat center center fixed; background-image: url(../images/bg-image.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,7 +16,7 @@ a:hover, a:focus{color: midnightblue}
 th{color: #54698d;}
 b{color: #666;}
 p{color: #fff; font-size: 15px}
-.container {height:100%; min-height: 100%; margin-top:5%;}
+.container {height:100%; min-height: 100%;}
 
 
 #menu li {
@@ -64,6 +64,7 @@ p{color: #fff; font-size: 15px}
 
 
 .nameTitle{border-top: 1px solid #fff; border-bottom: 1px solid #fff;}
+#work .nameTitle{border-top: 1px solid #666; border-bottom: 1px solid #666;}
 
 [placeholder]input-placeholder {transition: opacity 0.2s 0.2s ease; opacity: 0;}
 [placeholder]:focus::-webkit-input-placeholder {transition: opacity 0.2s 0.2s ease; opacity: 0;}
