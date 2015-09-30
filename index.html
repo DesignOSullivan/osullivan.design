@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Daniel O'Sullivan</title>
+    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/toggle-me-softly.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="Odysseys-Logo-Bird.png">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-toggle.min.js"></script>
+    
+    <link href="kendoui/styles/kendo.bootstrap.min.css">
+    <link href="kendoui/styles/kendo.common-bootstrap.min.css">
+    <script src="kendoui/js/kendo.all.min.js"></script>
+
+  
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', 'thirdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                scrollingSpeed: 1000,
+                navigation: true,
+            });
+
+        });
+    </script>
+
+   
+    
+    
+</head>
+
+<body>
+    
+    <ul id="menu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+    </ul>
+    
+    
+    <div id="fullpage">
+        
+        
+        <div class="section " id="section00">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-xs-5 nameTitle textCenter">
+                        <h1>It's not what you look at, it's what you see</h1>
+                        <i>-Henry David Thoreau</i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-xs-5">
+                        <div class="clear bottom30"></div>
+                        <p>I am an enterprise level UX designer with a focus on user centric application design, web design, and branding/identity.After founding Fresh Coast Creatives in early 2014, I joined Archetype SC to work with an incredible team of consultants, and create beautiful experiences for amazing companies.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="mailto:daniel.osullivan@archetypesc.com"><i>Daniel.Osullivan@archetypesc.com</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section " id="section00">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-xs-5 nameTitle textCenter">
+                        <h1>It's not what you look at, it's what you see</h1>
+                        <i>-Henry David Thoreau</i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-xs-5">
+                        <div class="clear bottom30"></div>
+                        <p>I am an enterprise level UX designer with a focus on user centric application design, web design, and branding/identity.After founding Fresh Coast Creatives in early 2014, I joined Archetype SC to work with an incredible team of consultants, and create beautiful experiences for amazing companies.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="mailto:daniel.osullivan@archetypesc.com"><i>Daniel.Osullivan@archetypesc.com</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section " id="section00">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-xs-5 nameTitle textCenter">
+                        <h1>It's not what you look at, it's what you see</h1>
+                        <i>-Henry David Thoreau</i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-5 col-xs-5">
+                        <div class="clear bottom30"></div>
+                        <p>I am an enterprise level UX designer with a focus on user centric application design, web design, and branding/identity.After founding Fresh Coast Creatives in early 2014, I joined Archetype SC to work with an incredible team of consultants, and create beautiful experiences for amazing companies.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="mailto:daniel.osullivan@archetypesc.com"><i>Daniel.Osullivan@archetypesc.com</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="section" id="section1">
+            <div class="slide">
+                <div class="intro">
+                    <h1>Create Sliders</h1>
+                    <p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
+                    <img src="imgs/slider.png" alt="slider" />
+                </div>
+
+            </div>
+            <div class="slide">
+                <div class="intro">
+                    <img src="imgs/1.png" alt="simple" />
+                    <h1>Simple</h1>
+                    <p>Easy to use. Configurable and customizable.</p>
+                </div>
+            </div>
+   
+    </div>
+        
+    
+    
+    <div id="progressbar"></div>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#progressbar").kendoProgressBar();
+        });
+
+    </script>
+    <script>
+
+        $("#progressbar").kendoProgressBar({
+            min: 100,
+            max: 500,
+            value: 100,
+            type: "percent",
+            orientation: "horizontal",
+            reverse: true,
+            complete: function(e) {
+                console.log("Progress completed");
+            },
+            animation: {
+                duration: 600
+            }
+        });
+
+    </script>
+    </div>
+        
+</body>
+
+</html>
