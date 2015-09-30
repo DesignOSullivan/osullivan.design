@@ -27,12 +27,28 @@
   
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('#fullpage').fullpage({
                 anchors: ['firstPage', 'secondPage', 'thirdPage', '4thpage', 'lastPage'],
                 menu: '#menu',
                 scrollingSpeed: 1000,
+                sectionsColor: ['', '', '#fff'],
+                paddingTop: '5%',
                 navigation: true,
+                onLeave: function(index, nextIndex, direction) {
+
+                    if (index == 3 && direction =='up') {
+                        $('body').css('background-image', 'url(../images/bg-image.png)');
+                    }
+
+                    if (index == 3 && direction =='down') {
+                        $('body').css('background-image', 'url(../images/bg-image2.png)');
+                    }
+
+
+                },
+
+
             });
 
         });
