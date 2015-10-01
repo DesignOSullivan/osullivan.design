@@ -18,6 +18,8 @@ b{color: #666;}
 p{color: #fff; font-size: 15px}
 .container {height:100%; min-height: 100%;}
 
+#name{display: none}
+
 #firstPage span{color:white;}
 
 i.fa{font-size: 75px !important;color: white;}
