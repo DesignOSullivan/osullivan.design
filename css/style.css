@@ -26,7 +26,7 @@ p{color: #fff; font-size: 15px}
 
 #me span{color:white;}
 
-i.fa{font-size: 75px !important;color: white;}
+i.fa{font-size: 75px !important; color: white; cursor: pointer;}
 
 .btn-default{box-shadow: none !important; background-color: #FF69B4 !important; color: #fff !important}
 

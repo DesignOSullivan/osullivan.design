@@ -252,25 +252,32 @@
                 <div class="clear bottom30"></div>
                 <div class="row">
                     <div class="col-md-2 col-xs-3">
-                        <a href="https://www.linkedin.com/in/danielosullivanmb"><i class="fa fa-linkedin"></i></a>
+                        <i id="linkedin" class="fa fa-linkedin"></i>
                     </div>
                     <div class="col-md-2 col-xs-3">
-                        <a class="cssbuttongo" href="https://twitter.com/designosullivan"><i class="fa fa-twitter"></i></a>
+                        <i id="twitter" class="fa fa-twitter"></i>
                     </div>
                     <div class="col-md-2 col-xs-3">
-                        <a href="mailto:daniel.osullivan@archetypesc.com"><i class="fa fa-envelope"></i></a>
+                        <i id="mail" class="fa fa-envelope"></i>
                     </div>
                 </div>
             </div>
         </div>
 
         <script>
-            $(document).ready(function()
-                              {
-                var href = $('.cssbuttongo').attr('href');
-                window.location.href = href; //causes the browser to refresh and load the requested url
-            });
-            });
+            $('#linkedin').click(function(){
+                window.location.href='https://www.linkedin.com/in/danielosullivanmb';
+            })
+            
+            $('#twitter').click(function(){
+                window.location.href='https://twitter.com/designosullivan';
+            })
+            
+            $('#mail').click(function(){
+                window.location.href='mailto:daniel.osullivan@archetypesc.com';
+            })
+            
+            
         </script>
         
     </div>
