@@ -15,7 +15,7 @@ a{color: slateblue/*#fd5c63*/; text-decoration: none; cursor:pointer;}
 a:hover, a:focus{color: midnightblue}
 th{color: #54698d;}
 b{color: #666;}
-p{color: #fff; font-size: 15px}
+p{color: #fff; font-size: 18px; font-family: "roboto", sans-serif; letter-spacing: 1px;}
 .container {height:100%; min-height: 100%;}
 
 #work p{color: #666; font-size: 15px;}
@@ -23,6 +23,8 @@ p{color: #fff; font-size: 15px}
 .slide img{margin-top: 15px; margin-bottom: 15px}
 .slide .intro{max-height: 100%;}
 #name{display: none}
+#me a{color:#fff;text-decoration: underline}
+#me p{ text-align: justify;}
 
 #me span{color:white;}
 
