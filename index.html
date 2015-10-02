@@ -9,7 +9,7 @@
     <title>Daniel O'Sullivan</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/toggle-me-softly.css" rel="stylesheet">
+<!--    <link href="css/toggle-me-softly.css" rel="stylesheet">-->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/jquery.fullPage.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -20,11 +20,11 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-toggle.min.js"></script>
+<!--    <script src="js/bootstrap-toggle.min.js"></script>-->
 
-    <link href="kendoui/styles/kendo.bootstrap.min.css">
-    <link href="kendoui/styles/kendo.common-bootstrap.min.css">
-    <script src="kendoui/js/kendo.all.min.js"></script>
+<!--    <link href="kendoui/styles/kendo.bootstrap.min.css">-->
+<!--    <link href="kendoui/styles/kendo.common-bootstrap.min.css">-->
+<!--    <script src="kendoui/js/kendo.all.min.js"></script>-->
     
     <script src="/js/vivus.js"></script>
     <script src="vivus.js"></script>
@@ -40,7 +40,8 @@
                 sectionsColor: ['', '', '#fff'],
                 paddingTop: '8%',
                 navigation: true,
-                scrollingSpeed: 700,
+                scrollingSpeed: 800,
+                resize: false,
                 onLeave: function (index, nextIndex, direction) {
                     if (index == 2 && direction == 'up') {
                         $('body').css('background-image', 'url(bg-image.png)');
@@ -233,15 +234,6 @@
                                 <h3>More To Come...</h3>
                             </div>
                         </div>
-<!--
-                        <div class="slide">
-                            <div class="intro">
-                                <img src="imgs/3.png" alt="Compatible" />
-                                <h1>Compatible</h1>
-                                <p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-                            </div>
-                        </div>
--->
                         
                     </div>
                 </div>
@@ -263,21 +255,23 @@
                         <a href="https://www.linkedin.com/in/danielosullivanmb"><i class="fa fa-linkedin"></i></a>
                     </div>
                     <div class="col-md-2 col-xs-3">
-                        <a href="https://twitter.com/designosullivan"><i class="fa fa-twitter"></i></a>
+                        <a class="cssbuttongo" href="https://twitter.com/designosullivan"><i class="fa fa-twitter"></i></a>
                     </div>
                     <div class="col-md-2 col-xs-3">
                         <a href="mailto:daniel.osullivan@archetypesc.com"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                    <a href="https://twitter.com/designosullivan">Tweet Me</a>
-                    </div>
-                </div>
             </div>
         </div>
 
-        
+        <script>
+            $(document).ready(function()
+                              {
+                var href = $('.cssbuttongo').attr('href');
+                window.location.href = href; //causes the browser to refresh and load the requested url
+            });
+            });
+        </script>
         
     </div>
 </body>
